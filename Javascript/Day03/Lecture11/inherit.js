@@ -9,8 +9,8 @@ let user2 = {
     amount:20,
     money:50
 }
-
-user2.__proto__ = user1;
+user2 = Object.create(user1) //overwrite 
+user2.__proto__ = user1;  //adds new
 console.log(user2.name);
 
 let arr = [10,20,30,40];
