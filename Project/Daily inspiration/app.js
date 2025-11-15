@@ -21,19 +21,16 @@ const quoteslist = [
   "Take the risk or lose the chance 🎲"
 ];
 
-
-
 const quote = document.getElementById("quote")
 let index = 0;
 quote.innerText = quoteslist[index]
 
-setInterval(() => {
+const button = document.querySelector("button")
+button.addEventListener('click',() => {
     quote.classList.add("fade");
 
     setTimeout(()=>{
         index = (index+1)%quoteslist.length;
         quote.innerText = quoteslist[index]
         quote.classList.remove("fade");
-    },500)
-    
-}, 3000);
+    },500)})
