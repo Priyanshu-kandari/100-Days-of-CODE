@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Bookmark Saver</h1>
+        <form action="">
+            <input type="text" id="bookmark-name" placeholder="Bookmark Name">
+            <input type="text" id="bookmark-url" placeholder="Bookmark URL">
+            <button id="add-bookmark" type="submit">Add Bookmark</button>
+        </form>
+
+        <ul class="list" id="bookmark-list">
+            <!-- items injected here by JS -->
+            <!-- <li>
+                <a href="https://example.com" target="_blank">Example</a>
+                <button class="remove-btn">Remove</button>
+            </li> -->
+        </ul>
+
+        <p id="small">
+            Bookmarks are stored in your browser's localStorage, they stay on this device.
+        </p>
+    </div>
+
+    <div id="credit"><a href="https://www.instagram.com/preyanshuuu">Developed by Priyanshu kandari</a></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
